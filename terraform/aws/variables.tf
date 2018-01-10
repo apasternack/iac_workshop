@@ -35,7 +35,7 @@ variable "public_key" {
 }
 
 variable "key_path" {
-  default = "/home/thedevilsvoice/.ssh/do_terra_rsa"
+  default = "~/.ssh/id_rsa.pub"
   description = "Path to your SSH private key half on local dev machine"
 }
 
