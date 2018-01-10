@@ -3,7 +3,7 @@ resource "aws_instance" "franklin-iac" {
     user        = "centos"
     timeout     = "1m"
     #agent       = false
-    private_key = "${file("/home/thedevilsvoice/.ssh/do_terra_rsa")}"
+    private_key = "${file("~/.ssh/id_rsa.pub")}"
   }
   ami           = "ami-d2c924b2"
   instance_type = "t2.micro"
